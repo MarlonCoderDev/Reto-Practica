@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto Puesto</title>
+  <link rel="stylesheet" href="reto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Menú de Navegación -->
+  <header class="navbar">
+    <div class="logo">
+      <h2>Mis Practicas</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#Inicio" onclick="cambiarContenido('Inicio')">Inicio</a></li>
+        <li><a href="#quienes-somos" onclick="cambiarContenido('Acerca de')">Quienes Somos</a></li>
+        <li><a href="#Habilidades" onclick="cambiarContenido('Servicios')">Habilidades</a></li>
+        <li><a href="#Contacto" onclick="cambiarContenido('Contacto')">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Bienvenido a nuestra página web</h1>
+      <p>Descubre lo que tenemos para ti.</p>
+      <button onclick="mostrarMensajeBanner()">Haz clic aquí</button>
+    </div>
+  </section>
+
+  <!-- Cuerpo de la página -->
+  <main class="content">
+    <h2>Contenido principal</h2>
+    <p id="textoCuerpo">Haz clic en los enlaces del menú para cambiar el contenido de esta sección.</p>
+    <section id="quienes-somos" class="about-section">
+      <h2>¿Quiénes Somos?</h2>
+      
+      <div class="about-container">
+        <div class="about-image">
+          <img src="img/equipo development.png" alt="Nuestro equipo">
+        </div>
+        
+        <div class="about-content">
+          <h3>Nuestra Historia</h3>
+          <p>Fundada en 2025, <strong>Mi Pratica</strong> nació con una visión clara: ofrecer soluciones innovadoras y de alta calidad que realmente resuelvan los problemas de nuestros clientes.</p>
+          
+          <h3>Nuestra Misión</h3>
+          <p>Buscamos transformar ideas en soluciones efectivas, acompañando a nuestros clientes en cada etapa del proceso y asegurando resultados que superen sus expectativas.</p>
+          
+          <div class="values-container">
+            <h3>Nuestros Valores</h3>
+            <div class="values-grid">
+              <div class="value-item">
+                <div class="value-icon">🤝</div>
+                <h4>Compromiso</h4>
+                <p>Nos dedicamos completamente a cada proyecto como si fuera nuestro propio negocio.</p>
+              </div>
+              
+              <div class="value-item">
+                <div class="value-icon">💡</div>
+                <h4>Innovación</h4>
+                <p>Constantemente buscamos nuevas formas de mejorar y ofrecer soluciones creativas.</p>
+              </div>
+              
+              <div class="value-item">
+                <div class="value-icon">⭐</div>
+                <h4>Excelencia</h4>
+                <p>No nos conformamos con menos que la perfección en todo lo que hacemos.</p>
+              </div>
+              
+              <div class="value-item">
+                <div class="value-icon">🌱</div>
+                <h4>Sostenibilidad</h4>
+                <p>Trabajamos con responsabilidad hacia nuestro entorno y las futuras generaciones.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="team-info">
+            <h3>Nuestro Equipo</h3>
+            <p>Contamos con profesionales altamente cualificados y apasionados por lo que hacen. Cada miembro aporta su experiencia única para crear un equipo dinámico y multidisciplinar.</p>
+            <a href="#" class="team-button" onclick="cambiarContenido('Equipo')">Conoce a nuestro equipo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Habilidades">
+      <h2>Nuestras Habilidades</h2>
+      <div class="card-container">
+          <div class="card" onclick="mostrarMensaje('HTML para estructurar contenido web')">
+              <img src="img/HTML.png" alt="HTML">
+              <h3>HTML</h3>
+              <p>Es el lenguaje fundamental para estructurar y desplegar contenido en la web, definiendo la estructura y organización de páginas web como textos, imágenes y enlaces.</p>       
+          </div>
+          <div class="card" onclick="mostrarMensaje('CSS para dar diseño a la web')">
+              <img src="img/CSS-Logo.jpg" alt="CSS">
+              <h3>CSS</h3>
+              <p>Es una hoja de cascada que se utiliza para definir el diseño de páginas web y otros documentos electrónicos</p>
+          </div>
+          <div class="card" onclick="mostrarMensaje('JAVASCRIPT para paginas web interactivas')">
+              <img src="img/JavaScript-Logo.png" alt="JAVASCRIPT">
+              <h3>JAVASCRIPT</h3>
+              <p>Lenguaje de programación que se utiliza para crear páginas web interactivas. Se usa para hacer que las páginas sean más dinámicas y mejorar la experiencia del usuario.</p>
+          </div>
+      </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Mis Practicas</h3>
+            <p>Creando grandes trabajadores.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#quienes-somos">Quienes Somos</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Mis Practicas. Todos los derechos reservados.</p>
+        <p>Hecho por Marlon Anderson Marin Dueñas</p>
+    </div>
+  </footer>
+
+  <script src="reto.js"></script>
+</body>
+</html>
